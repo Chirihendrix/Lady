@@ -1,0 +1,624 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Libre Baskerville Regular;
+  height: 100vh;
+}
+
+
+  /*===General de botones y busqueda===*/
+
+input[type=text], button[type=submit], .btn{
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  background-color: rgba(255, 228, 196, 0.247);
+  border-radius: 20px;
+    
+}
+
+button[type=submit], .btn, .button{
+    padding: 8px 12px;
+    margin-top: 8px;
+    margin-right: auto;
+    background: rgba(255, 217, 171, 0.74);
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+  }
+
+button:hover{
+    background: rgba(0, 0, 0, 0.178);
+  }
+
+
+/*===General de botones y busqueda===*/
+
+.search a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+  
+.search a:hover {
+  background-color: bisque;
+  color: black;
+}
+  
+.search {
+  float: right;
+  margin: 10px 10px;
+
+}
+
+.toplogo {
+  margin: 10px 10px;
+}
+  
+.search button {
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin-left: 10px;
+
+}
+
+.search__nav {
+  margin-top: 10px;
+}
+
+.navegacion {
+  margin-top: 30px;
+}
+/*Barra de navegacion*/
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:bisque;
+    justify-content: space-evenly;
+    
+  }
+
+}
+
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:bisque;
+  justify-content: space-evenly;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li .dropdown {
+  display: inline-block;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 228, 196, 0.733);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown__content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+.navegacion a {
+  color: black;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.navegacion a:hover {
+  background-color: rgba(80, 77, 77, 0.315);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+
+/*Especiales*/
+
+.especiales {
+  margin: 50px 50px;
+  
+}
+.spa, .hotel, .hogar {
+
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+  overflow: auto;
+  text-align: center;
+}
+  
+.spa1, .hote1, .home1 {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+.cardText {
+ padding: 20px;
+ margin: 30px;
+  
+}
+
+.informacion__titulo--uppercase {
+ font-size: 30px;
+ padding: 10px;
+
+}
+
+.content {
+  position: relative;
+  bottom: 35rem;
+  background-color: rgba(0, 0, 0, 0.623);
+  color: white;
+  padding: 5%;
+  max-width: 50%;
+  border-radius: 20px;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .especiales {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70vh;
+    margin: 50px 50px;
+    
+  }
+  
+  .spa, .hotel, .hogar {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 40%;
+    overflow: hidden;
+    
+  
+  }
+  .spaInner, .hotelInner, .hogarInner {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .spa:hover .spaInner, .hotel:hover .hotelInner, .hogar:hover .hogarInner {
+    transform: rotateY(180deg);
+  }
+  
+  .spa__front, .spa__back, .hotel__front, .hotel__back, .hogar__front, .hogar__back {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .spa__back, .hotel__back, .hogar__back {
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    background-color: bisque;
+    padding: 50px;
+    
+  }
+  
+}
+
+/*Pie de Pagina*/
+
+.botMail input{
+  background-color: white;
+}
+
+
+.facebook span {
+  font-size: 22px;
+  margin-right: 20px;
+  color: #3b5998;
+}
+
+.instagram span {
+  font-size: 22px;
+  margin-right: 18px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: bisque;
+  height: 30vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+
+}
+
+.foot__cardpie {
+  margin-top: 3rem
+}
+
+
+  
+/*Pagina de login*/
+
+.contenedorLogin {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  height: 100vh;
+
+}
+
+.contenedorLogin .containerLogin {
+  display: flex;
+  height: 75vh;
+  background-image: url("../images/fondo/fondo4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+
+}
+
+.containerFormLogin {
+  display: flex;
+  text-align: center;
+  border-radius: 20px;
+  flex-direction: column;
+  
+}
+
+.login {
+  background-color: #f1f1f1a2;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.form__login {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+
+.form__login button {
+  margin: 5px auto;
+}
+
+.login__head {
+  margin: 20px 20px;
+}
+
+.topLogo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/*Pagina de Registro*/
+
+.contenedorRegistro {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  height: 100vh;
+}
+
+.contenedorRegistro .containerRegistro{
+  display: flex;
+  height: 100vh;
+  background-image: url("../images/fondo/fondo4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+
+
+.registro {
+  display: flex;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: #f1f1f1a2;
+  margin: auto;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.form__registro  {
+  margin: 20px 20px;
+
+}
+
+.logoReg {
+  display: flex;
+  justify-content: center;
+
+}
+
+@media screen and (max-width: 768px) {
+  .registro {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .logoReg {
+    display: flex;
+    
+  }
+}
+
+
+/*Pagina de compra segura*/
+
+.contenedor {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 100vh;
+}
+
+.contenedor header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.contenedor footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.contenedor main {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.containerSeg {
+  display: flex;
+}
+
+.seguraText {
+  margin: 145px;
+  border: 1px solid beige;
+  padding: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Pagina de como comprar*/
+
+.comoBox {
+  display: flex;
+  flex-direction: column;
+  margin: 80px;
+}
+
+
+/*Pagina Nosotros*/
+@media screen and (min-width: 1200px) {
+  .nosotros_box {
+    display: flex;
+    align-items: center;
+  }
+  .nosotros__text {
+    width: 60%;
+  }
+}
+
+.nosotrosBox {
+  display: flex;
+  margin: 10px;
+  
+}
+
+.nosotros__text {
+  text-indent: 50px;
+  border: 1px solid beige;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.container__video {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+.nosotrosBox p {
+  margin: 65px;
+  font-size: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+}
+
+/*Pagina Contacto*/
+
+.contactoPanza {
+  display: flex;
+  padding: 20px 20px;
+  margin: 20px;
+  height: 100vh;
+}
+
+.contacto__mapa {
+  display: flex;
+  align-items:center;
+  margin-left: 5rem;
+  margin-top: 10rem;
+
+}
+
+.contacto__informacion {
+ display: flex;
+ position: absolute;
+ text-align: center;
+ margin-top: 5rem;
+ margin-left: 5rem;
+}
+
+
+.bannerRegistro {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.contacto__formulario {
+  display: flex;
+  text-align: center;
+  margin-left: 30rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  justify-content: space-around;
+  border: 1px solid beige;
+  border-radius: 20px;
+  background-image: url("../images/fondo/fondo5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 40%;
+  padding: 100px;
+  
+  
+} 
+
+
+
+
+/*PAGINA OFERTAS*/
+
+.cardborder {
+text-align: center;
+margin: 50px;
+display: table;
+content: "";
+clear: both;
+padding: 0;
+}
+
+/*Pagina productos*/
+
+.contenedorProducto {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 100vh;
+}
+
+.contenedorProducto header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.contenedorProducto footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.contenedorProducto main {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.gridcontainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 10px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+  }
+  }
+
+.sidebar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: bisque;
+}
+
+.sidebar a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  float: left;
+  padding: 10px 20px;
+  width: auto;
+
+}
+
+.sidebar a:hover {
+  background-color: rgba(80, 77, 77, 0.315);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.cardtitle, .infotext, .precio1 {
+  padding: 10px;
+}
