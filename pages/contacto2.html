@@ -35,11 +35,11 @@
                               <li><a class="dropdown-item" href="#">Inciensos</a></li>
                               <li><a class="dropdown-item" href="#">Accesorios</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="./productos.html">Todos</a></li>
+                              <li><a class="dropdown-item" href="#">Todos</a></li>
                             </ul>
                           </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../sale.html">Ofertas</a>
+                        <a class="nav-link active" aria-current="page" href="../pages/sale.html">Ofertas</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active" href="../pages/comocomprar.html">Como comprar</a>
@@ -76,33 +76,41 @@
         </header>
         <!--Cuerpo de pagina-->
         <main>
-            <section class="container">
-                <div class="seguraText">
-                    <p class="segura__parrafo">
-                        <h1>Sobre los Pagos Online:</h1>
-                        <br>
-                        Nuestro site está preparado y vinculado legalmente con los distintos motores de pago para que puedas realizar pagos online y seguros con los distintos medios vigentes: TARJETAS DE CRÉDITO, TARJETAS DE DÉBITO, RAPIPAGO O PAGO FÁCIL, CARGA VIRTUAL, etc. <br>Las mismas se realizan en una ventana de seguridad garantizando que la operación se efectúe exitosamente bajo normas legales. Así mismo, Lady Aromatics no tiene acceso alguno a los datos sensibles de las tarjetas de crédito o débito introducidos para abonar a través de MercadoPago.
-                        <br>
-                        <br>
-                        <h1>Privacidad Absoluta:</h1>
-                        <br>
-                        Protegemos la información en el trayecto que va de tu computadora, smartphone o tablet hasta nuestro servidor. Encriptamos los datos en forma segura (TLS) y así cumplimos con los más altos estándares de seguridad online.
-                    </p>
-                </div>
-            </section>
-            <section class="container">
-                <div class="row row_galeria">
+            <div class="container">
+                <div class="row row__contacto">
                     <div class="col">
-                        <img src="../images/Galeria/foto1.jpg" alt="" class="rounded mx-auto d-block">
+                        <h4>Contactate con Nosotros</h4>
+                        <h6>Envianos tu consulta y te responderemos a la brevedad.</h6>
+                        <p class="datos__consulta">
+                            <h4>Sucursal</h4>
+                            Paraguay 4636 - Palermo
+                            <p>Telefono: (011) 4-7775-8742
+                               Celular 11-5698-7895
+                            </p>
+                            Abierto: Lunes a Sábados
+                            de 9 a 20hs
+                            <p>info@ladyproyecto.com.ar</p>
+                        </p>
+                        <iframe src="https://maps.google.com/maps?q=paraguay%204567&t=&z=13&ie=UTF8&iwloc=&output=embed" width="280" height="250" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
-                    <div class="col-xl-4 col-md-1">
-                        <img src="../images/Galeria/foto2.jpg" alt="" class="rounded mx-auto d-block">
-                    </div>
-                    <div class="col-xl">
-                        <img src="../images/Galeria/foto3.jpg" alt="" class="rounded mx-auto d-block">
+                    <div class="col">
+                        <form class="contactoConsulta">
+                            <label for="fname">Nombre:</label>
+                            <input type="text" class="form-control" id="fname" name="fname" required>
+                            <label for="lname">Apellido:</label>
+                            <input type="text" class="form-control" id="lname" name="lname" required>
+                            <label for="mail">Email:</label>
+                            <input type="text" class="form-control" id="mail" name="mail" required>
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono" required>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <button class="enviar" type="submit">Enviar</button></a>
+                        </form>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
         <!--Informacion den PIE DE PAGINA-->
         <footer class="footer">

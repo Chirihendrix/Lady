@@ -298,6 +298,13 @@ li .dropdown {
   margin-top: 3rem
 }
 
+.leftText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
 
   
 /*Pagina de login*/
