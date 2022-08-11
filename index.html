@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady</title>
+    <link rel="stylesheet" href="././css/style.css">
+    <link rel="stylesheet" type="text/css" href="././iconos/iconitos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="navegador">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid head__nav">
+          <a href=""><img src="./images/logo.png" alt="gato"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Velas</a></li>
+                  <li><a class="dropdown-item" href="#">Aromatizadores</a></li>
+                  <li><a class="dropdown-item" href="#">Difusores</a></li>
+                  <li><a class="dropdown-item" href="#">Hornitos</a></li>
+                  <li><a class="dropdown-item" href="#">Aceites</a></li>
+                  <li><a class="dropdown-item" href="#">Inciensos</a></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./pages/productos.html">Todos</a></li>
+                </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/sale.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/comocomprar.html">Como comprar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/comprasegura.html">Compra Segura</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="carrito">
+                <a href=""><span class="icon icon-cart"></span></a>
+              </li>
+            </ul>
+            <div class="search">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+              </form>
+              <div class="login">
+                <li class="nav-item">
+                  <a class="nav-link me-2" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-2" href="./pages/registro.html">Registro</a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>  
+    </header>
+    <!--Cuerpo de pagina-->
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/banners/index2.jpg" alt="bannerinicio" class="d-block w-100" alt="...">
+            <div class="text_carru">
+              <h5>Una idea enciende mil velas</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banners/index3.jpg" alt="bannerinicio" class="d-block w-100" alt="...">
+            <div class="text_carru">
+              <h5>La curiosidad es la mecha en la vela del aprendizaje</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banners/index4.jpg" alt="bannerinicio" class="d-block w-100" alt="...">
+            <div class="text_carru">
+              <h5>El entusiasmo es el partido que ilumina la vela del logro</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row index__row">
+          <div class="col col__flipCard">
+            <div class="container col__flipCard__inner">
+              <div class="col col__cuadro">
+                <img src="./images/index/SPA.jpg" alt="spa" class="cuadro">
+                <div class="text-block">
+                  <h5>Velas Ecologicas</h5>
+                  <p>Descrubilas!</p>
+                </div>
+              </div>
+              <div class="col col__cuadro__back">
+                <h3>Nuestras velas son ecologicas:</h3> 
+                <p>Fabricadas a partir de porotos de soja, las velas ecológicas son una alternativa natural de iluminar el hogar sin dañar el medioambiente. La cera que utilizan es biodegradable y renovable. Además, no es tóxica y su combustión produce menos hollín que las tradicionales de origen petroquímico o parafina. Las velas de cera de soja incluso pueden durar un 50% más, ya que se consumen lentamente y a menor temperatura, manteniendo las fragancias de manera continua en el aire.</p> 
+              </div>
+            </div>
+          </div>
+          <div class="col col__flipCard">
+            <div class="container col__flipCard__inner">
+              <div class="col col__cuadro">
+                <img src="./images/index/HOTEL.jpg" alt="hotel" class="cuadro">
+                <div class="text-block">
+                  <h5>Diseños unicos</h5>
+                  <p>No te los pierdas</p>
+                </div>
+              </div>
+              <div class="col col__cuadro__back">
+                <h3>Diseños de excelencia:</h3> 
+                <p>Lady Proyecto sigue en la búsqueda constante de la excelencia en el diseño de espacios integrales.<br>La experiencia que nos da el mercado del diseño, nos permite incorporar una amplia variedad de productos de alta calidad, adaptándonos a las demandas del mercado y a las necesidades de cada cliente en particular.<br>Inspirados en un estilo moderno y sin descuidar las tendencias actuales brindamos lo necesario para que sus espacios sean de alta categoría y estética.</p> 
+              </div>
+            </div>
+          </div>
+          <div class="col col__flipCard">
+            <div class="container col__flipCard__inner">
+              <div class="col col__cuadro">
+                <img src="./images/index/HOME.jpg" alt="hogar"class="cuadro">
+                <div class="text-block">
+                  <h5>Aceites esenciales</h5>
+                  <p>¿Qué son?</p>
+                </div>
+              </div>
+              <div class="col col__cuadro__back">
+                <h3>Nuestros aceites son esenciales:</h3> 
+                <p>¿Qué son los aceites esenciales? Los aceites esenciales son la esencia de una planta, un regalo de la tierra, destilada y preparada para que puedas llevar el poder de la naturaleza a tu hogar.Dentro de muchas plantas, ocultas en las raíces, semillas, flores, corteza, se encuentran compuestos químicos concentrados y muy potentes. Estos compuestos naturales son aceites esenciales.Los aceites esenciales le dan a la planta su aroma, la protegen de condiciones ambientales peligrosas e incluso la ayudan con la polinización, entre otras funciones y beneficios importantes.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Informacion den PIE DE PAGINA-->
+    <footer class="footer">
+      <div class="row align-items-end">
+        <div class="col-xl-4 info">
+          <p>Paraguay 4636 - Palermo</p>
+          <p>(011) 4-7775-8742</p>
+          <p><span class="icon2 icon-whatsapp"></span> Celular 11-5698-7895</p>
+          <p>Lun a Viernes</p>
+          <p>09:00 a 20:00 hs</p>
+          <p>info@ladyproyecto.com.ar</p>
+      </div>
+      <div class="col-xl-4 redes">
+        <h5>Redes Sociales:</h5>
+        <div class="facebook">
+          <p class="fuenteIntermedia"><span class="icon2 icon-facebook2"></span>Ladyproyecto</p>
+        </div>
+        <div class="instagram">
+          <p class="fuenteIntermedia"><span class="icon2 icon-instagram"></span>@Ladyproyecto</p>
+        </div>
+      </div>
+      <div class="col-xl-4 news">
+        <h6>NEWSLETTER </h6>
+        <p>Enterate antes que nadie de nuestras novedades</p>
+        <div class="newsLetter">
+          <div class="enviar">
+            <form action="#cabcecera">
+              <div class="newslatter">
+                <input class="form-control mb-3" type="search" placeholder="e-Mail" aria-label="mail">
+                <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
