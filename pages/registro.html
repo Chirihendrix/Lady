@@ -1,107 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registro</title>
+        <title>Lady</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../iconos/iconitos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <div class="contenedorRegistro">
-            <main>         <!--Formulario de registro-->
-                <div class="containerRegistro">
-                    <form class="registro">
-                        <div class="logoReg">
-                            <a href="../index.html"><img src="../images/logo.png" alt="gato"></a>
+        <header class="navegador">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid head__nav">
+                    <a href=""><img src="../images/logo.png" alt="gato"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Velas</a></li>
+                              <li><a class="dropdown-item" href="#">Aromatizadores</a></li>
+                              <li><a class="dropdown-item" href="#">Difusores</a></li>
+                              <li><a class="dropdown-item" href="#">Hornitos</a></li>
+                              <li><a class="dropdown-item" href="#">Aceites</a></li>
+                              <li><a class="dropdown-item" href="#">Inciensos</a></li>
+                              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="../productos.html">Todos</a></li>
+                            </ul>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../sale.html">Ofertas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/comocomprar.html">Como comprar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/comprasegura.html">Compra Segura</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                      <li class="carrito">
+                        <a href=""><span class="icon icon-cart"></span></a>
+                      </li>
+                    </ul>
+                    <div class="search">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                        <div class="login">
+                            <li class="nav-item">
+                                <a class="nav-link me-2" href="#">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-2" href="#">Registro</a>
+                            </li>
                         </div>
-                        <div class="form__registro">
-                            <div>
-                                <label for="fname" class="datos">Nombre:</label><br>
-                                <input type="text" id="fname" name="fname" required><br>
-                            </div>
-                            <div>
-                                <label for="lname"class="datos">Apellido:</label><br>
-                                <input type="text" id="lname" name="lname" required><br>
-                            </div>
-                            <div>
-                                <label for="address"class="datos">Direcion:</label><br>
-                                <input type="text" id="address" name="address" required><br>
-                            </div>
-                            <div>
-                                <label for="telefono"class="datos">Telefono:</label><br>
-                                <input type="text" id="telefono" name="telefono" required><br>
-                            </div>
-                            <div>
-                                <label for="mail"class="datos">E-mail:</label><br>
-                                <input type="text" id="mail" name="mail" required><br>
-                            </div>
-                            <div>
-                                <label for="birth"class="datos">Cumpleaños:</label><br>
-                                <input type="date" id="date" name="date" required><br>
-                            </div>
-                            <div>
-                                <label for="psswrd"class="datos">Contraseña:</label><br>
-                                <input type="text" id="pssw" name="pssw" required><br>
-                            </div>
-                            <div class="form-check item formulario">
-                                <input class="datos" type="checkbox" value id="invalidCheck2" required>
-                                <label class="datos" for="invalidCheck2">Acepto termino y condiciones</label>
-                            </div>
-                            <div class="btnesreg">
-                                <button class="btn-secondary" type="submit">Registrar</button></a>
-                                <br>
-                                <button class="btn-secondary" type="submit">Reset</button></a>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-                <!--Informacion den PIE DE PAGINA-->
-                <footer class="footer">
-                    <div class="foot__cardpie">
-                        <h2>Capital Federal</h2>
-                        <p class="leftText">
-                        Paraguay 4636 - Palermo
-                        <br>
+              </nav>
+        </header>
+        <!--Cuerpo de pagina-->
+        <main class="registro">
+            <div class="container col-2">
+                <div>
+                    <label for="fname" class="datos">Nombre:</label><br>
+                    <input type="text" class="form-control" id="fname" name="fname" required><br>
+                </div>
+                <div>
+                    <label for="lname"class="datos">Apellido:</label><br>
+                    <input type="text" class="form-control" id="lname" name="lname" required><br>
+                </div>
+                <div>
+                    <label for="address"class="datos">Direcion:</label><br>
+                    <input type="text" class="form-control" id="address" name="address" required><br>
+                </div>
+                <div>
+                    <label for="telefono"class="datos">Telefono:</label><br>
+                    <input type="text" class="form-control" id="telefono" name="telefono" required><br>
+                </div>
+                <div>
+                    <label for="mail"class="datos">E-mail:</label><br>
+                    <input type="text" class="form-control" id="mail" name="mail" required><br>
+                </div>
+                <div>
+                    <label for="birth"class="datos">Cumpleaños:</label><br>
+                    <input type="date" class="form-control" id="date" name="date" required><br>
+                </div>
+                <div>
+                    <label for="psswrd"class="datos">Contraseña:</label><br>
+                    <input type="text" class="form-control" id="pssw" name="pssw" required><br>
+                </div>
+                <div class="form-check item formulario">
+                    <input class="datos" type="checkbox" value id="invalidCheck2" required>
+                    <label class="datos" for="invalidCheck2">Acepto termino y condiciones</label>
+                </div>
+                <div class="btnesreg">
+                    <button class="btn-secondary" type="submit">Registrar</button></a>
+                    <br>
+                    <button class="btn-secondary" type="submit">Reset</button></a>
+                </div>
+            </div>
+        </main>
+        <!--Informacion den PIE DE PAGINA-->
+        <footer class="footer">
+            <div class="row align-items-end">
+                <div class="col-xl-4">
+                    Paraguay 4636 - Palermo
+                    <div class="whatsapp">
                         (011) 4-7775-8742
-                        <br>
-                        <span class="icon icon-whatsapp"></span> Celular 11-5698-7895
-                        <br>
-                        Lun a Viernes
-                        <br>
-                        09:00 a 20:00 hs
-                        <br>
-                        info@ladyproyecto.com.ar
-                        </p>
+                        <p class="fuenteIntermedia"><span class="icon2 icon-whatsapp"></span> Celular 11-5698-7895</p>
                     </div>
-                    <div class="foot__cardpie">
-                        <h2>NEWSLETTER</h2>
-                        <p>Enterate antes que nadie de nuestras novedades</p>
-                        <div class="newsLetter">
-                            <div class="enviar">
-                                <form action="#cabcecera">
-                                    <div class="botMail">
-                                        <input type="text" placeholder="E-mail" name="newsletter" required> <!--modificar luego-->
-                                        <button class="btn btn-primary" type="submit">Enviar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    Lun a Viernes
+                    <p>09:00 a 20:00 hs</p>
+                    <p>info@ladyproyecto.com.ar</p>
+                </div>
+                <div class="col-xl-4 redes">
+                    <h5>Redes Sociales:</h5>
+                    <div class="facebook">
+                        <p class="fuenteIntermedia"><span class="icon2 icon-facebook2"></span>Ladyproyecto</p>
                     </div>
-                    <div class="foot__cardpie">
-                        <div class="future-icon bg-primary bg-gradient">
-                            <h2 class="fuenteMediana">Redes Sociales</h2>
-                        </div>
-                        <div class="facebook">
-                            <p class="fuenteIntermedia"><span class="icon icon-facebook2"></span>Ladyproyecto</p>
-                        </div>
-                        <div class="instagram">
-                            <p class="fuenteIntermedia"><span class="icon icon-instagram"></span>@Ladyproyecto</p>
+                    <div class="instagram">
+                        <p class="fuenteIntermedia"><span class="icon2 icon-instagram"></span>@Ladyproyecto</p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <h6>NEWSLETTER </h6>
+                    <p>Enterate antes que nadie de nuestras novedades</p>
+                    <div class="newsLetter">
+                        <div class="enviar">
+                            <form action="#cabcecera">
+                                <div class="newslatter">
+                                    <input class="form-control mb-3" type="search" placeholder="e-Mail" aria-label="mail">
+                                    <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </footer>
-            </main>
-        </div>
+                </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

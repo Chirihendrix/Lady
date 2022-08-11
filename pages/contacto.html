@@ -4,149 +4,148 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto</title>
+        <title>Lady</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../iconos/iconitos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <div class="contenedorProducto">
-            <!--Cabecera-->
-            <header>
-                <div class="top">
+        <header class="navegador">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid head__nav">
+                    <a href=""><img src="../images/logo.png" alt="gato"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Velas</a></li>
+                              <li><a class="dropdown-item" href="#">Aromatizadores</a></li>
+                              <li><a class="dropdown-item" href="#">Difusores</a></li>
+                              <li><a class="dropdown-item" href="#">Hornitos</a></li>
+                              <li><a class="dropdown-item" href="#">Aceites</a></li>
+                              <li><a class="dropdown-item" href="#">Inciensos</a></li>
+                              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Todos</a></li>
+                            </ul>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/sale.html">Ofertas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/comocomprar.html">Como comprar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/comprasegura.html">Compra Segura</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                      <li class="carrito">
+                        <a href=""><span class="icon icon-cart"></span></a>
+                      </li>
+                    </ul>
                     <div class="search">
-                        <form action="./index.html">
-                            <input type="text" placeholder="Search.." name="search" required>
-                            <button class="botoEnviar" type="submit">Buscar</button>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
                         </form>
-                        <nav class="login__top">
-                            <a href="../pages/registro.html">Registrate</a>
-                            <a href="../pages/login.html">Login</a>
-                        </nav>
-                    </div>
-                    <div class="toplogo">
-                        <a href="../index.html"><img src="../images/logo.png" alt="gato"></a>
-                    </div>
-                    <nav class="navegacion">
-                        <ul class="navegacion__top">
-                            <li><a href="../index.html"><span class="icon icon-home2"></span></a></li>
-                            <li class="dropdown">
-                                <a href="../pages/productos.html" class="dopbtn">Productos</a>
-                                <div class="dropdown__content">
-                                    <a href="">Velas</a>
-                                    <a href="">Aromatizadores</a>
-                                    <a href="">Difusores</a>
-                                    <a href="">Hornitos</a>
-                                    <a href="">Aceites</a>
-                                    <a href="">Inciensos</a>
-                                    <a href="">Accesorios</a>
-                                </div>
+                        <div class="login">
+                            <li class="nav-item">
+                                <a class="nav-link me-2" href="#">Login</a>
                             </li>
-                            <li><a href="../pages/sale.html">Ofertas</a></li>
-                            <li><a href="../pages/comocomprar.html">Como Comprar</a></li>
-                            <li><a href="../pages/comprasegura.html">Compra Segura</a></li>
-                            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                            <li><a href="../pages/contacto.html">Contacto</a></li>
-                            <li><a href="../pages/productos.html"><span class="icon icon-cart"></span></a></li>
-                        </ul>
-                    </nav> 
-                </div>
-            </header>
-            <!--Cuerpo de pagina-->
-            <main>
-                <img src="../images/banners/contacto.jpg" style="width: 100%;" class="bannerRegistro" alt="bannercontacto">
-                <div class="contactoPanza">
-                    <div class="contacto__informacion">
-                        <p class="contactoConsulta"><b>Contactate con Nosotros</b>
-                            <br>
-                            Envianos tu consulta y te responderemos a la brevedad.
-                            <br>
-                            <br>
-                            <b>Sucursal</b>
-                            <br>
-                            Paraguay 4636 - Palermo
-                            <br>
-                            (011) 4-7775-8742<br>
-                            Celular 11-5698-7895
-                            <br>
-                            Abierto: Lunes a Sábados <br> de 9 a 20hs
-                            <br>
-                            info@ladyproyecto.com.ar
-                        </p>
+                            <li class="nav-item">
+                                <a class="nav-link me-2" href="#">Registro</a>
+                            </li>
+                        </div>
                     </div>
-                    <div class="contacto__mapa">
-                        <iframe src="https://maps.google.com/maps?q=paraguay%204567&t=&z=13&ie=UTF8&iwloc=&output=embed" width="450" height="250" allowfullscreen="" loading="lazy">
+                </div>
+              </nav>
+        </header>
+        <!--Cuerpo de pagina-->
+        <main>
+            <div class="container">
+                <div class="row row__contacto">
+                    <div class="col">
+                        <h4>Contactate con Nosotros</h4>
+                        <h6>Envianos tu consulta y te responderemos a la brevedad.</h6>
+                        <div class="datos__consulta">
+                            <h4>Sucursal</h4>
+                            <p>Paraguay 4636 - Palermo</p>
+                            <p>Telefono: (011) 4-7775-8742</p>
+                            <p> Celular: 11-5698-7895</p>
+                            <p>Abierto: Lunes a Sábados</p>
+                            <p>Horario: 9 a 20hs</p>
+                            <p>info@ladyproyecto.com.ar</p>
+                        </div>
+                        <iframe src="https://maps.google.com/maps?q=paraguay%204567&t=&z=13&ie=UTF8&iwloc=&output=embed" width="280" height="250" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
-                    <div class="contacto__formulario">
-                        <form class="contactoFormulario">
+                    <div class="col">
+                        <form class="contactoConsulta">
                             <label for="fname">Nombre:</label>
-                            <br>
-                            <input type="text" id="fname" name="fname" required>
-                            <br>
+                            <input type="text" class="form-control" id="fname" name="fname" required>
                             <label for="lname">Apellido:</label>
-                            <br>
-                            <input type="text" id="lname" name="lname" required>
-                            <br>
+                            <input type="text" class="form-control" id="lname" name="lname" required>
                             <label for="mail">Email:</label>
-                            <br>
-                            <input type="text" id="mail" name="mail" required>
-                            <br>
+                            <input type="text" class="form-control" id="mail" name="mail" required>
                             <label for="telefono">Telefono:</label>
-                            <br>
-                            <input type="text" id="telefono" name="telefono" required>
-                            <br>
+                            <input type="text" class="form-control" id="telefono" name="telefono" required>
                             <label for="mensaje">Mensaje:</label>
-                            <br>
-                            <textarea id="mensaje" name="mensaje" rows="10" cols="50" placeholder="Escribe tu mensaje aqui.."></textarea><br>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             <button class="enviar" type="submit">Enviar</button></a>
                         </form>
                     </div>
                 </div>
-            </main>
-            <!--Informacion den PIE DE PAGINA-->
-            <footer class="footer">
-                <div class="foot__cardpie c1">
-                    <h2>Capital Federal</h2>
-                    <p class="leftText">
-                        Paraguay 4636 - Palermo
-                        <br>
-                        (011) 4-7775-8742
-                        <br>
-                        <span class="icon icon-whatsapp"></span> Celular 11-5698-7895
-                        <br>
-                        Lun a Viernes
-                        <br>
-                        09:00 a 20:00 hs
-                        <br>
-                        info@ladyproyecto.com.ar
-                    </p>
+            </div>
+        </main>
+        <!--Informacion den PIE DE PAGINA-->
+        <footer class="footer">
+            <div class="row align-items-end">
+              <div class="col-xl-4 info">
+                <p>Paraguay 4636 - Palermo</p>
+                <p>(011) 4-7775-8742</p>
+                <p><span class="icon2 icon-whatsapp"></span> Celular 11-5698-7895</p>
+                <p>Lun a Viernes</p>
+                <p>09:00 a 20:00 hs</p>
+                <p>info@ladyproyecto.com.ar</p>
+            </div>
+            <div class="col-xl-4 redes">
+              <h5>Redes Sociales:</h5>
+              <div class="facebook">
+                <p class="fuenteIntermedia"><span class="icon2 icon-facebook2"></span>Ladyproyecto</p>
+              </div>
+              <div class="instagram">
+                <p class="fuenteIntermedia"><span class="icon2 icon-instagram"></span>@Ladyproyecto</p>
+              </div>
+            </div>
+            <div class="col-xl-4 news">
+              <h6>NEWSLETTER </h6>
+              <p>Enterate antes que nadie de nuestras novedades</p>
+              <div class="newsLetter">
+                <div class="enviar">
+                  <form action="#cabcecera">
+                    <div class="newslatter">
+                      <input class="form-control mb-3" type="search" placeholder="e-Mail" aria-label="mail">
+                      <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="foot__cardpie c2">
-                    <h2>NEWSLETTER</h2>
-                    <p>Enterate antes que nadie de nuestras novedades</p>
-                    <div class="newsLetter">
-                        <div class="enviar">
-                            <form action="#cabcecera">
-                                <div class="botMail">
-                                    <input type="text" placeholder="E-mail" name="newsletter" required> <!--modificar luego-->
-                                    <button class="btn btn-primary" type="submit">Enviar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="foot__cardpie c3">
-                    <div class="future-icon bg-primary bg-gradient">
-                        <h2 class="fuenteMediana">Redes Sociales</h2>
-                    </div>
-                    <div class="facebook">
-                        <p class="fuenteIntermedia"><span class="icon icon-facebook2"></span>Ladyproyecto</p>
-                    </div>
-                    <div class="instagram">
-                        <p class="fuenteIntermedia"><span class="icon icon-instagram"></span>@Ladyproyecto</p>
-                    </div>
-                </div>
-            </footer>
-        </div>
+              </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
