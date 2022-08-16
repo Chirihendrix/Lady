@@ -1,0 +1,280 @@
+ul {
+    list-style: none;
+
+        li{
+            padding: 5px;
+            display: inline-block;
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: $negro;
+                }
+                &:hover {
+                    color: $traslucido;
+                }
+        }
+}
+
+.nav-item {
+
+    &:hover {
+        background-color: $traslucido;
+        border-radius: 20px;
+    }
+}
+
+// - SIN MODIFICAR 
+
+
+
+
+.login {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+.icon {
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+.icon2 {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+
+.dropdown-menu :hover {
+    border-radius: 20px;
+}
+
+/*--footer--*/
+
+footer {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+
+.fuenteIntermedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redes {
+    height: 15vh;
+}
+
+.info p{
+    line-height: 0.7;
+}
+
+
+/*-- main -- */
+
+.index__row {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.index__row h3{
+    display: none;
+}
+
+
+.cuadro{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+
+.text-block {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    
+  }
+
+.text_carru {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .text_carru h5 {
+        font-size: small;
+    }
+    .text_carru {
+        padding-right: 30px;
+
+    }
+    .carousel button {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .col__flipCard {
+        background-color: transparent;
+        perspective: 1000px;
+        width: 300px;
+        height: 482px;
+    }
+    
+    .col__flipCard__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        text-align: center;
+        
+        
+    }
+    
+    .col__flipCard:hover .col__flipCard__inner {
+        transform: rotateY(180deg);
+    }
+    
+    .col__cuadro, .col__cuadro__back {
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        width: 90%;
+        height: 100%;
+    }
+    
+    .col__cuadro__back {
+        color: black;
+        transform: rotateY(180deg);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px;
+        margin-left: 30px;
+        background-color: rgba(255, 228, 196, 0.603);
+        padding: 20px;
+    }
+    .text-block {
+        position: absolute;
+        top: 60px;
+        left: 28px;
+        background-color: rgba(0, 0, 0, 0.384);
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        
+    }
+
+    .index__row h3{
+        display:flex;
+    }
+
+    
+}
+
+
+
+/*--Contacto--*/
+
+.contactoConsulta {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.contactoConsulta button {
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: bisque;
+    border-radius: 20px;
+    border: none;
+}
+
+.contactoConsulta button:hover {
+    background-color: rgba(46, 46, 46, 0.555);
+}
+
+.datos__consulta {
+    display: grid;
+    grid-row: auto;
+
+}
+
+.row__contacto {
+    padding: 50px;
+}
+
+.nosotrosMain {
+    margin: 50px;
+}
+.datos__consulta {
+    line-height: 0.7;
+}
+
+/*-- Compra Segura--*/
+
+.seguraText {
+    margin: 50px;
+}
+
+
+/*-- Como Comprar --*/
+
+.comoBox {
+    margin: 50px;
+}
+
+/*--Registro--*/
+
+.registro{
+    background-image: url(../images/fondo/fondo.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+}
+
+/*-- Nosotros --*/
+
+.row_galeria {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row_galeria img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col__nos {
+    padding: 10px;
+}
+
+.nosotros__text{
+    text-indent: 50px;
+    padding-top: 30px;
+}
