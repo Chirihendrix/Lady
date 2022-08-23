@@ -6,7 +6,7 @@ ul {
             display: inline-block;
                 a{
                     text-decoration: none;
-                    font-size: 15px;
+                    font-size: 20px;
                     color: $negro;
                 }
                 &:hover {
@@ -21,6 +21,13 @@ ul {
         background-color: $traslucido;
         border-radius: 20px;
     }
+}
+
+.icon2 {
+    @extend .icon;
+    font-size: 20px;
+    padding-right: 5px;
+
 }
 
 // - SIN MODIFICAR 
@@ -45,10 +52,10 @@ ul {
     padding-left: 20px;
 }
 
-.icon2 {
+/*.icon2 {
     font-size: 20px;
     padding-right: 5px;
-}
+}*/
 
 
 .dropdown-menu :hover {
@@ -99,100 +106,6 @@ footer {
     margin-bottom: 20px;
 }
 
-
-.text-block {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.384);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    
-  }
-
-.text_carru {
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    background-color: rgba(0, 0, 0, 0.384);
-    color: white;
-    padding-left: 20px;
-    padding-right: 100px;
-    padding-top: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .text_carru h5 {
-        font-size: small;
-    }
-    .text_carru {
-        padding-right: 30px;
-
-    }
-    .carousel button {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    .col__flipCard {
-        background-color: transparent;
-        perspective: 1000px;
-        width: 300px;
-        height: 482px;
-    }
-    
-    .col__flipCard__inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        text-align: center;
-        
-        
-    }
-    
-    .col__flipCard:hover .col__flipCard__inner {
-        transform: rotateY(180deg);
-    }
-    
-    .col__cuadro, .col__cuadro__back {
-        position: absolute;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        width: 90%;
-        height: 100%;
-    }
-    
-    .col__cuadro__back {
-        color: black;
-        transform: rotateY(180deg);
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        border-radius: 20px;
-        margin-left: 30px;
-        background-color: rgba(255, 228, 196, 0.603);
-        padding: 20px;
-    }
-    .text-block {
-        position: absolute;
-        top: 60px;
-        left: 28px;
-        background-color: rgba(0, 0, 0, 0.384);
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        
-    }
-
-    .index__row h3{
-        display:flex;
-    }
-
-    
-}
 
 
 

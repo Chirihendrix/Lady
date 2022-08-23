@@ -21,6 +21,10 @@ footer {
   font-family: "Libre Baskerville Regular";
 }
 
+main {
+  font-family: "Libre Baskerville Regular";
+}
+
 ul {
   list-style: none;
 }
@@ -30,7 +34,7 @@ ul li {
 }
 ul li a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
 }
 ul li:hover {
@@ -42,6 +46,11 @@ ul li:hover {
   border-radius: 20px;
 }
 
+.icon2 {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
 .login {
   display: flex;
   flex-direction: row;
@@ -49,7 +58,7 @@ ul li:hover {
   padding: 10px;
 }
 
-.icon {
+.icon, .icon2 {
   color: black;
   font-size: 25px;
   display: flex;
@@ -58,11 +67,10 @@ ul li:hover {
   padding-left: 20px;
 }
 
-.icon2 {
-  font-size: 20px;
-  padding-right: 5px;
-}
-
+/*.icon2 {
+    font-size: 20px;
+    padding-right: 5px;
+}*/
 .dropdown-menu :hover {
   border-radius: 20px;
 }
@@ -103,6 +111,93 @@ footer {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 20px;
+}
+
+/*--Contacto--*/
+.contactoConsulta {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contactoConsulta button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: bisque;
+  border-radius: 20px;
+  border: none;
+}
+
+.contactoConsulta button:hover {
+  background-color: rgba(46, 46, 46, 0.555);
+}
+
+.datos__consulta {
+  display: grid;
+  grid-row: auto;
+}
+
+.row__contacto {
+  padding: 50px;
+}
+
+.nosotrosMain {
+  margin: 50px;
+}
+
+.datos__consulta {
+  line-height: 0.7;
+}
+
+/*-- Compra Segura--*/
+.seguraText {
+  margin: 50px;
+}
+
+/*-- Como Comprar --*/
+.comoBox {
+  margin: 50px;
+}
+
+/*--Registro--*/
+.registro {
+  background-image: url(../images/fondo/fondo.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+/*-- Nosotros --*/
+.row_galeria {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row_galeria img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col__nos {
+  padding: 10px;
+}
+
+.nosotros__text {
+  text-indent: 50px;
+  padding-top: 30px;
+}
+
+.icon-facebook2 {
+  color: blue;
+}
+
+.icon-instagram {
+  color: deeppink;
+}
+
+.icon-whatsapp {
+  color: green;
 }
 
 .text-block {
@@ -183,80 +278,6 @@ footer {
   .index__row h3 {
     display: flex;
   }
-}
-/*--Contacto--*/
-.contactoConsulta {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.contactoConsulta button {
-  width: 100px;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: bisque;
-  border-radius: 20px;
-  border: none;
-}
-
-.contactoConsulta button:hover {
-  background-color: rgba(46, 46, 46, 0.555);
-}
-
-.datos__consulta {
-  display: grid;
-  grid-row: auto;
-}
-
-.row__contacto {
-  padding: 50px;
-}
-
-.nosotrosMain {
-  margin: 50px;
-}
-
-.datos__consulta {
-  line-height: 0.7;
-}
-
-/*-- Compra Segura--*/
-.seguraText {
-  margin: 50px;
-}
-
-/*-- Como Comprar --*/
-.comoBox {
-  margin: 50px;
-}
-
-/*--Registro--*/
-.registro {
-  background-image: url(../images/fondo/fondo.jpg);
-  background-repeat: none;
-  background-size: cover;
-}
-
-/*-- Nosotros --*/
-.row_galeria {
-  display: flex;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.row_galeria img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.col__nos {
-  padding: 10px;
-}
-
-.nosotros__text {
-  text-indent: 50px;
-  padding-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
