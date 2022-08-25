@@ -4,6 +4,7 @@ $redes: (
     whatsapp: green,
 );
 
+
 @each $nombres, $color in $redes {
     .icon-#{$nombres} {
         color: $color;

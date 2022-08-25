@@ -46,11 +46,6 @@ ul li:hover {
   border-radius: 20px;
 }
 
-.icon2 {
-  font-size: 20px;
-  padding-right: 5px;
-}
-
 .login {
   display: flex;
   flex-direction: row;
@@ -58,7 +53,7 @@ ul li:hover {
   padding: 10px;
 }
 
-.icon, .icon2 {
+.icon {
   color: black;
   font-size: 25px;
   display: flex;
@@ -67,10 +62,11 @@ ul li:hover {
   padding-left: 20px;
 }
 
-/*.icon2 {
-    font-size: 20px;
-    padding-right: 5px;
-}*/
+.icon2 {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
 .dropdown-menu :hover {
   border-radius: 20px;
 }
