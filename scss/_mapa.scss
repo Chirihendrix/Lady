@@ -1,0 +1,13 @@
+$redes: (
+    facebook2: blue,
+    instagram: deeppink,
+    whatsapp: green,
+);
+
+
+@each $nombres, $color in $redes {
+    .icon-#{$nombres} {
+        color: $color;
+    }
+
+}
