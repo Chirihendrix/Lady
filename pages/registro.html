@@ -10,12 +10,13 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../iconos/iconitos.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="../images/favicon.ico"/>
     </head>
     <body>
         <header class="navegador">
             <nav class="navbar navbar-expand-lg navbar-light ">
               <div class="container-fluid head__nav">
-                <a href=""><img src="../images/logo.png" alt="gato"></a>
+                <a href="../index.html"><img src="../images/logo.png" alt="gato"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -78,7 +79,7 @@
         </header>
         <!--Cuerpo de pagina-->
         <main class="registro">
-            <div class="container col-2">
+            <div class="container col-md-2" style="padding-top: 3rem; padding-bottom: 3rem;">
                 <div>
                     <label for="fname" class="datos">Nombre:</label><br>
                     <input type="text" class="form-control" id="fname" name="fname" required><br>
@@ -111,10 +112,9 @@
                     <input class="datos" type="checkbox" value id="invalidCheck2" required>
                     <label class="datos" for="invalidCheck2">Acepto termino y condiciones</label>
                 </div>
-                <div class="btnesreg">
-                    <button class="btn-secondary" type="submit">Registrar</button></a>
-                    <br>
-                    <button class="btn-secondary" type="submit">Reset</button></a>
+                <div class="btnesreg" style="text-align: center;">
+                    <button class="btn-secondary" type="submit" style="background-color: rgba(255, 228, 196, 0.664); color: black; border-radius: 20px;" type="submit">Registrar</button></a>
+                    <button class="btn-secondary" type="submit" style="background-color: rgba(255, 228, 196, 0.664); color: black; border-radius: 20px;" type="submit">Reset</button></a>
                 </div>
             </div>
         </main>
