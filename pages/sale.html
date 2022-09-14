@@ -1,186 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="VELAS, HORNITO, REPUESTO, PAVILO, CERA, DECORACION, ACEITE, AROMA, OFERTAS, DESCUENTOS">
-        <title>Ofertas</title>
-        <meta name="description" content="Nuestra lista de productos para vender con descuentos especiales">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" type="text/css" href="../iconos/iconitos.css">
-    </head>
-    <body>
-        <!--Cabecera-->
-        <header>
-            <div class="top">
-                <div class="search">
-                    <form action="./index.html">
-                        <input type="text" placeholder="Search.." name="search" required>
-                        <button class="botoEnviar" type="submit">Buscar</button>
-                    </form>
-                    <nav class="login__top">
-                        <a href="../pages/registro.html">Registrate</a>
-                        <a href="../pages/login.html">Login</a>
-                    </nav>
-                </div>
-                <div class="toplogo">
-                    <a href="../index.html"><img src="../images/logo.png" alt="gato"></a>
-                </div>
-                <nav class="navegacion">
-                    <ul class="navegacion__top">
-                        <li><a href="../index.html"><span class="icon icon-home2"></span></a></li>
-                        <li class="dropdown">
-                            <a href="../pages/productos.html" class="dopbtn">Productos</a>
-                            <div class="dropdown__content">
-                                <a href="">Velas</a>
-                                <a href="">Aromatizadores</a>
-                                <a href="">Difusores</a>
-                                <a href="">Hornitos</a>
-                                <a href="">Aceites</a>
-                                <a href="">Inciensos</a>
-                                <a href="">Accesorios</a>
-                            </div>
-                        </li>
-                        <li><a href="../pages/sale.html">Ofertas</a></li>
-                        <li><a href="../pages/comocomprar.html">Como Comprar</a></li>
-                        <li><a href="../pages/comprasegura.html">Compra Segura</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                        <li><a href="../pages/productos.html"><span class="icon icon-cart"></span></a></li>
-                    </ul>
-                </nav> 
-                
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" DIRECCION, LOCACION, TELEFONO, NOMBRE, MAIL, INFORMACION, VELAS">
+    <title>Ofertas</title>
+    <meta name="description" content="Pagina con ofertas">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../iconos/iconitos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="../images/favicon.ico"/>
+  </head>
+  <body>
+    <header class="navegador">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid head__nav">
+          <a href="../index.html"><img src="../images/logo.png" alt="gato"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="./productos.html">Todos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./productos.html">Velas</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Aromatizadores</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Difusores</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Hornitos</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Aceites</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Inciensos</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./sale.html">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./comocomprar.html">Como comprar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./comprasegura.html">Compra Segura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="carrito">
+              <a href=""><span class="icon icon-cart"></span></a>
+            </li>
+          </ul>
+          <div class="search">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+            <div class="login">
+              <li class="nav-item">
+                <a class="nav-link me-2" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="./registro.html">Registro</a>
+              </li>
             </div>
-        </header>
-        <!--Cuerpo de pagina-->
-        <main>
-            <img src="../images/banners/ofertas.jpg"style="width:100%;">
-            <nav class="sidebar">
-                <div class="navegadorItems">
-                    <a href="">Velas</a>
-                    <a href="">Aromatizadores</a>
-                    <a href="">Difusores</a>
-                    <a href="">Hornitos</a>
-                    <a href="">Aceites</a>
-                    <a href="">Inciensos</a>
-                    <a href="">Accesorios</a>
+          </div>
+        </div>    
+      </nav>
+    </header>
+    <!--Cuerpo de pagina-->
+    <main>
+        <img src="../images/banners/ofertas.jpg"style="width:100%;">
+        <ul class="nav flex-column float-start" style="background-color: bisque; margin-top: 50px;">
+            <li class="nav-item" style="padding: 20px;">
+                <a class="nav-light" href="#">Todos</a>
+            </li>
+            <li class="nav-item" style="padding: 20px;">
+                <a class="nav-light" href="#">Velas</a>
+            </li>
+            <li class="nav-item" style="padding: 20px;">
+              <a class="nav-light" href="#">Aromatizadores</a>
+            </li>
+            <li class="nav-item" style="padding: 20px;">
+              <a class="nav-light" href="#">Difusores</a>
+            </li>
+            <li class="nav-item" style="padding: 20px;">
+                <a class="nav-light" href="#">Hornitos</a>
+            </li>
+            <li class="nav-item" style="padding: 20px;">
+                <a class="nav-light" href="#">Aceites</a>
+            </li>
+            <li class="nav-item" style="padding: 20px;">
+                <a class="nav-light" href="#">Inciensos</a>
+            </li>
+            <li class="nav-item" style="padding: 20px;">
+                <a class="nav-light" href="#">Accesorios</a>
+            </li>
+        </ul>
+        <section class="container-fluid" style="margin-top: 50px; margin-bottom: 50px;">
+            <div class="row row-cols-1 row-cols-md-6 g-4">
+                <div class="col">
+                  <div class="card" style="text-align:center">
+                    <img src="../images/productos/velas/vela.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="velarustica">
+                    <div class="card-body">
+                      <h5 class="card-title">Vela Rustica</h5>
+                      <p class="card-text">Vela decorativa para interiores</p>
+                      <h2><del>$200,00</del> <br>$180,00</h2>
+                      <a href="#" class="btn btn-primary">Agregar</a>
+                    </div>
+                  </div>
                 </div>
-            </nav>
-            <section class="grid">
-                <div class="gridcontainer2">
-                    <div class="cardborder">
-                        <div class="cardbody">
-                            <img src="../images/productos/velas/vela.jpg" class="velatop" alt="velarustica">
-                            <div class="cardcontainer">
-                                <h2 class="cardtitle">Vela Rustica</h2>
-                                <p class="title">Vela decorativa para interiores</p>
-                                <h3><del>$200,00</del> <br>$180,00</h3>
-                                <p><button class="button">Agregar</button></p><!--SE DEBE AGREGAR EL HTML DE CARRITO-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardborder">
-                        <div class="cardbody">
-                            <img src="../images/productos/hornitos/hornito1.jpg" class="hornitop" alt="hornijapo">
-                            <h2 class="cardtitle">Hornito de Ceramica</h2>
-                            <p class="infotext">Hornito para aceites "Japones"</p>
-                            <h3><del>$3100,00</del> <br>$2500,00</h3>
-                            <a href=""><button class="botones" type="submit"> Agregar </button></a> <!--SE DEBE AGREGAR EL HTML DE CARRITO-->
-                        </div>
-                    </div>
-                    <div class="cardborder">
-                        <div class="cardbody">
-                            <img src="../images/productos/incienso/incienso1.jpg" class="sahumtop" alt="sahumerio">
-                            <h3 class="cardtitle">Sahumerio de Palo Santo</h3>
-                            <p class="infotext">Sagrada Madre</p>
-                            <h3 class="precio1"><del>$150,00</del> <br>$100,00</h3>
-                            <a href=""><button class="botones" type="submit"> Agregar </button></a> <!--SE DEBE AGREGAR EL HTML DE CARRITO-->
-                        </div>
-                    </div>
-                    <div class="cardborder">
-                        <div class="cardbody">
-                            <img src="../images/productos/difusores/difu1.jpg" class="difutop" alt="difusor">
-                            <h2 class="cardtitle">Difusor de Vidrio</h2>
-                            <p class="infotext">Sweet Zen</p>
-                            <h3><del>$190,00</del> <br>$130,00</h3>
-                            <a href=""><button class="botones" type="submit"> Agregar </button></a> <!--SE DEBE AGREGAR EL HTML DE CARRITO-->
-                        </div>
-                    </div>
-                    <div class="cardborder">
-                        <div class="cardbody">
-                            <img src="../images/productos/aromatizadores/aroma1.jpg" class="arotop" alt="aromati">
-                            <h2 class="cardtitle">Aromatizador "Aspen"</h2>
-                            <p class="infotext">Aromatizador Ultrasonico</p>
-                            <h3 class="precio1"><del>$15000,00</del> <br>$11000,00</h3>
-                            <a href=""><button class="botones" type="submit"> Agregar </button></a> <!--SE DEBE AGREGAR EL HTML DE CARRITO-->
-                        </div>
-                    </div>
-                    <div class="cardborder">
-                        <div class="cardbody">
-                            <img src="../images/productos/aceites/ace1.jpg" class="acetop" alt="acecolada">
-                            <h2 class="cardtitle">Aceite para hornito</h2>
-                            <p class="infotext">Piña Colada</p>
-                            <h3><del>$90,00</del> <br>$75,00</h3>
-                            <a href=""><button class="botones" type="submit"> Agregar </button></a> <!--SE DEBE AGREGAR EL HTML DE CARRITO-->
-                        </div>
-                    </div>
-                    <div class="cardborder">
-                        <div class="cardbody">
-                            <img src="../images/productos/accesorios/acce1.jpg" class="accetop" alt="accevari">
-                            <h2 class="cardtitle">Varillas de Rattan</h2>
-                            <p class="infotext">repuesto</p>
-                            <h3><del>$90,00</del> <br>$75,00</h3>
-                            <a href=""><button class="botones" type="submit"> Agregar </button></a> <!--SE DEBE AGREGAR EL HTML DE CARRITO-->
-                        </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/hornitos/hornito1.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;"  alt="hornijapo">
+                      <div class="card-body">
+                        <h5 class="card-title">Hornito de Ceramica</h5>
+                        <p class="card-text">Hornito para aceites "Japones</p>
+                        <h2><del>$3100,00</del> <br>$2500,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!--Informacion den PIE DE PAGINA-->
-        <footer class="footer">
-            <div class="foot__cardpie">
-                <h2>Capital Federal</h2>
-                <p class="leftText">
-                    Paraguay 4636 - Palermo
-                    <br>
-                    (011) 4-7775-8742
-                    <br>
-                    <span class="icon icon-whatsapp"></span> Celular 11-5698-7895
-                    <br>
-                    Lun a Viernes
-                    <br>
-                    09:00 a 20:00 hs
-                    <br>
-                    info@ladyproyecto.com.ar
-                </p>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/incienso/incienso1.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="sahumerio">
+                      <div class="card-body">
+                        <h5 class="card-title">Sahumerio de Palo Santo</h5>
+                        <p class="card-text">Sagrada Madre</p>
+                        <h2><del>$150,00</del> <br>$100,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/difusores/difu1.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="difusor">
+                      <div class="card-body">
+                        <h5 class="card-title">Difusor de Vidrio transparente</h5>
+                        <p class="card-text">Sweet Zen</p>
+                        <h2><del>$190,00</del> <br>$130,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/aromatizadores/aroma1.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="aromati">
+                      <div class="card-body">
+                        <h5 class="card-title">Aromatizador "Aspen" electronico</h5>
+                        <p class="card-text">Aromatizador Ultrasonico</p>
+                        <h2><del>$15000,00</del> <br>$11000,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/aceites/ace1.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="acecolada">
+                      <div class="card-body">
+                        <h5 class="card-title">Aceite para hornito esencial</h5>
+                        <p class="card-text">Piña Colada</p>
+                        <h2><del>$90,00</del> <br>$75,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/accesorios/acce1.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="accevari">
+                      <div class="card-body">
+                        <h5 class="card-title">Varillas de Rattan</h5>
+                        <p class="card-text">Repuesto para difusores</p>
+                        <h2><del>$90,00</del> <br>$75,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/velas/vela2.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="accevari">
+                      <div class="card-body">
+                        <h5 class="card-title">Vela Deco Rustic</h5>
+                        <p class="card-text">Vela Rustica aromatica</p>
+                        <h2><del>$290,00</del> <br>$175,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/aromatizadores/aroma2.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="accevari">
+                      <div class="card-body">
+                        <h5 class="card-title">Aromatizador "Roble" electronico</h5>
+                        <p class="card-text">Ultrasonico automatico</p>
+                        <h2><del>$1190,00</del> <br>$975,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/difusores/difu2.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="accevari">
+                      <div class="card-body">
+                        <h5 class="card-title">Difusor Space "SPA"</h5>
+                        <p class="card-text">Vainilla Canela</p>
+                        <h2><del>$490,00</del> <br>$375,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/difusores/difu3.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="accevari">
+                      <div class="card-body">
+                        <h5 class="card-title">Difusor "Queen"</h5>
+                        <p class="card-text">Manzana Eucaliptus</p>
+                        <h2><del>$390,00</del> <br>$275,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="text-align:center">
+                        <img src="../images/productos/hornitos/hornito2.jpg" class="card-img-top; mx-auto" style="width: 150px; height: 250px;" alt="accevari">
+                      <div class="card-body">
+                        <h5 class="card-title">Hornito Siglo XXII</h5>
+                        <p class="card-text">Ceramica</p>
+                        <h2><del>$90,00</del> <br>$75,00</h2>
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <div class="foot__cardpie">
-                <h2>NEWSLETTER</h2>
-                <p>Enterate antes que nadie de nuestras novedades</p>
-                <div class="newsLetter">
-                    <div class="enviar">
-                        <form action="#cabcecera">
-                            <div class="botMail">
-                                <input type="text" placeholder="E-mail" name="newsletter" required> <!--modificar luego-->
-                                <button class="btn btn-primary" type="submit">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="foot__cardpie">
-                <div class="future-icon bg-primary bg-gradient">
-                    <h2 class="fuenteMediana">Redes Sociales</h2>
-                </div>
-                <div class="facebook">
-                    <p class="fuenteIntermedia"><span class="icon icon-facebook2"></span>Ladyproyecto</p>
-                </div>
-                <div class="instagram">
-                    <p class="fuenteIntermedia"><span class="icon icon-instagram"></span>@Ladyproyecto</p>
-                </div>
-            </div>
-        </footer>
-        <p class="derechos"> Lady Proyecto todo los derechos reservados</p>
-    </body>
+        </section>
+    </main>
+    <!--Informacion den PIE DE PAGINA-->
+    <footer class="footer">
+      <div class="row align-items-end">
+        <div class="col-xl-4 info">
+          <p>Paraguay 4636 - Palermo</p>
+          <p>(011) 4-7775-8742</p>
+          <p><span class="icon2 icon-whatsapp"></span> Celular 11-5698-7895</p>
+          <p>Lun a Viernes</p>
+          <p>09:00 a 20:00 hs</p>
+          <p>info@ladyproyecto.com.ar</p>
+      </div>
+      <div class="col-xl-4 redes">
+        <h5>Redes Sociales:</h5>
+        <div class="facebook">
+          <p class="fuenteIntermedia"><span class="icon2 icon-facebook2"></span>Ladyproyecto</p>
+        </div>
+        <div class="instagram">
+          <p class="fuenteIntermedia"><span class="icon2 icon-instagram"></span>@Ladyproyecto</p>
+        </div>
+      </div>
+      <div class="col-xl-4 news">
+        <h1 class="h6">NEWSLETTER </h1>
+        <p>Enterate antes que nadie de nuestras novedades</p>
+        <div class="newsLetter">
+          <div class="enviar">
+            <form action="#cabcecera">
+              <div class="newslatter">
+                <input class="form-control mb-3" type="search" placeholder="e-Mail" aria-label="mail">
+                <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h1 class="h6" style="font-size: small;">Lady Corp derechos reservados</h1>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
